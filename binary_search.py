@@ -5,7 +5,7 @@
 def test_binary_search(arr, n):
     """middle_index +/- 1造成两次死循环"""
 
-    if isinstance(arr, list) and isinstance(n, int):
+    if isinstance(arr, list) and isinstance(n, (int, float)):
         length = len(arr)
         # if length == 0:
         #     return 'list is empty'
